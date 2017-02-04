@@ -3,7 +3,7 @@
   remote_user: root
 
   roles:
-    - common
+    - core
     - python
     - python-packages
     - database
