@@ -1,0 +1,17 @@
+- name: Install GUI packages
+  apt: name={{item}} state=present
+  with_items:
+      - xorg
+      - open-vm-tools-desktop
+      - fonts-dejavu
+      - gnome-icon-theme
+      - awesome
+      - i3
+      - roxterm
+      - lxappearance
+      - gtk2-engines
+      - conky
+      - scite
+      - gtkorphan
+      - fslint
+      - bleachbit

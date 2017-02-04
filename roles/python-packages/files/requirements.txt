@@ -1,0 +1,11 @@
+wheel
+virtualenv
+ipython
+cython
+psycopg2
+pgcli
+grin
+isort
+pylint
+radon
+autopep8

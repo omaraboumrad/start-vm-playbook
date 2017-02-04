@@ -1,0 +1,31 @@
+- name: update all packages to the latest version
+  apt:
+    upgrade: dist
+
+- name: update the apt cache
+  apt:
+    update_cache: yes
+
+- name: install common packages
+  apt: name={{item}} state=present
+  with_items:
+    - build-essential
+    - ncdu
+    - htop
+    - vim
+    - exuberant-ctags
+    - tig
+    - ranger
+    - bmon
+    - pv
+    - rpl
+    - unzip
+    - p7zip-full
+    - open-vm-tools
+    - python-pip
+
+- name: remove snapd
+  apt: name=snapd state=absent
+
+- name: create the shared hosts directory
+  file: path=~/.host-shared state=directory

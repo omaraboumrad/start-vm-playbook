@@ -1,0 +1,10 @@
+- name: build a fresh ubuntu machine
+  hosts: all
+  remote_user: root
+
+  roles:
+    - common
+    - python
+    - python-packages
+    - database
+    - gui
