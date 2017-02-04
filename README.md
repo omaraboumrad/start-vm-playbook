@@ -18,7 +18,6 @@ The main idea is to try and replicate start-vm's provided `base.yml` sample as a
 ```
 base.yml -> site.yml
 sections definition -> roles definition
-core -> common
 debian_packages -> apt task present state
 pre-install -> standard task (random module)
 purge -> apt task absent state
