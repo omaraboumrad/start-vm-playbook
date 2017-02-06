@@ -1,6 +1,0 @@
-- name: upload requirements file
-  copy: dest=/tmp/requirements.txt src=requirements.txt
-
-- name: install python libraries
-  pip:
-    requirements: /tmp/requirements.txt
